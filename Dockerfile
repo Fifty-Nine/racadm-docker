@@ -10,4 +10,5 @@ RUN apt-get update && \
     apt-get install -y srvadmin-idracadm8 && \
     ln -s /usr/lib/x86_64-linux-gnu/libssl.so.3 /usr/lib/x86_64-linux-gnu/libssl.so
 
+WORKDIR "/root"
 ENTRYPOINT ["/usr/bin/racadm"]
